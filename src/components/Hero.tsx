@@ -3,6 +3,9 @@
 import { motion } from "framer-motion";
 
 const Hero = () => {
+  // Replace with your Google Drive File ID
+  const RESUME_DOWNLOAD_LINK = "https://drive.google.com/file/d/18J_mm62PpzxdQHrmkHxB0PSVHzroOOsF/view?usp=sharing";
+
   return (
     <section
       id="home"
@@ -77,9 +80,9 @@ const Hero = () => {
             transition={{ delay: 0.4 }}
             className="text-gray-400 text-base md:text-lg lg:text-xl mb-8 max-w-3xl mx-auto leading-relaxed"
           >
-            B.Tech CSE (AI & ML) student at VBIT with a strong focus on Full-Stack Development,
-            Artificial Intelligence. Passionate about creating intelligent, 
-            user-centric solutions using Python, React, and modern AI technologies.
+            B.Tech in CSE (AI & ML) student at VBIT with expertise in Full-stack Development,
+            AI/ML, and ServiceNow. ServiceNow Hackathon 2025 Top 50 Finalist.
+            Building intelligent solutions with Python, React, and cutting-edge AI technologies.
           </motion.p>
 
           {/* CTA Buttons */}
@@ -98,12 +101,17 @@ const Hero = () => {
               Explore My Work
             </motion.a>
             <motion.a
-              href="#contact"
-              className="w-full sm:w-auto bg-accent-cyan text-primary-dark px-8 py-3 rounded-lg font-semibold hover:bg-accent-green transition-all"
+              href={RESUME_DOWNLOAD_LINK}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="w-full sm:w-auto bg-accent-cyan text-primary-dark px-8 py-3 rounded-lg font-semibold hover:bg-accent-green transition-all flex items-center justify-center gap-2"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
             >
-              Let&apos;s Connect
+              <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                <path fillRule="evenodd" d="M3 17a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm3.293-7.707a1 1 0 011.414 0L9 10.586V3a1 1 0 112 0v7.586l1.293-1.293a1 1 0 111.414 1.414l-3 3a1 1 0 01-1.414 0l-3-3a1 1 0 010-1.414z" clipRule="evenodd" />
+              </svg>
+              Download Resume
             </motion.a>
           </motion.div>
         </div>
