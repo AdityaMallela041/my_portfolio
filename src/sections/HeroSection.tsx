@@ -93,7 +93,7 @@ export function HeroSection() {
               isLoaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'
             }`}
           >
-            SOFTWARE ENGINEER | AI / ML Developer | Applied Machine Learning
+            SOFTWARE ENGINEER | AI / ML Developer | Production-Grade AI Systems
           </p>
 
           {/* Name */}

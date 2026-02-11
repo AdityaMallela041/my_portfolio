@@ -56,19 +56,6 @@ export function Navigation() {
       >
         <div className="w-full px-6 lg:px-12">
           <div className="flex items-center justify-between h-16 lg:h-20">
-            {/* Logo */}
-            <a 
-              href="#home" 
-              className="flex items-center gap-2 group"
-              onClick={(e) => handleNavClick(e, '#home')}
-            >
-              <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-indigo to-purple-500 flex items-center justify-center group-hover:scale-105 transition-transform">
-                <span className="font-heading font-bold text-sm text-white">A</span>
-              </div>
-              <span className="font-heading font-semibold text-lg text-slate-primary group-hover:text-indigo transition-colors">
-                AdityaML
-              </span>
-            </a>
 
             {/* Desktop Navigation */}
             <div className="hidden md:flex items-center gap-8">
