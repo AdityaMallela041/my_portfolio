@@ -151,9 +151,9 @@ export function ProjectsSection() {
                   {/* Highlights */}
                   <ul className="space-y-1.5 mb-4">
                     {project.highlights.slice(0, 3).map((highlight, hIndex) => (
-                      <li key={hIndex} className="flex items-start gap-2 text-sm text-slate-secondary">
-                        <span className="text-indigo mt-1">•</span>
-                        <span className="line-clamp-1">{highlight}</span>
+                      <li key={hIndex} className="flex items-start gap-2.5 text-sm text-slate-secondary">
+                        <span className="text-indigo mt-0.5 flex-shrink-0">•</span>
+                        <span className="line-clamp-1 leading-relaxed">{highlight}</span>
                       </li>
                     ))}
                   </ul>

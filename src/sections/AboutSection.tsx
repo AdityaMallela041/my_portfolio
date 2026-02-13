@@ -75,8 +75,8 @@ export function AboutSection() {
     <section
       id="about"
       ref={sectionRef}
-      className="relative py-20 lg:py-32 z-[60]"
-      style={{ background: 'transparent' }}
+      className="relative pt-40 pb-20 lg:pt-48 lg:pb-32 z-[60]"
+      style={{ background: 'transparent', scrollMarginTop: '100px' }}
     >
       <div
         className={`glass-card mx-auto transition-all duration-1000 ${
@@ -86,7 +86,7 @@ export function AboutSection() {
           width: 'min(88vw, 1100px)',
         }}
       >
-        <div className="p-8 lg:p-12">
+        <div className="p-8 pt-12 lg:p-12 lg:pt-16">
           <h2
             className={`font-heading font-semibold text-slate-primary mb-8 transition-all duration-700 ${
               isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'
@@ -190,17 +190,17 @@ export function AboutSection() {
                 <h3 className="font-mono text-xs tracking-[0.12em] uppercase text-slate-secondary mb-4">
                   Certifications
                 </h3>
-                <div className="space-y-2">
+                <div className="space-y-2.5">
                   {certifications.map((cert, index) => (
                     <a
                       key={index}
                       href={cert.url}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="flex items-center gap-2 text-slate-secondary hover:text-indigo transition-colors text-sm group"
+                      className="flex items-start gap-3 text-slate-secondary hover:text-indigo transition-all text-sm group p-3 rounded-lg border border-white/[0.05] hover:border-indigo/40 hover:bg-white/[0.03]"
                     >
-                      <ExternalLink size={14} className="flex-shrink-0 opacity-0 group-hover:opacity-100 transition-opacity" />
-                      <span className="group-hover:underline underline-offset-2">{cert.name}</span>
+                      <ExternalLink size={16} className="flex-shrink-0 text-slate-secondary/60 group-hover:text-indigo transition-colors mt-0.5" />
+                      <span className="leading-relaxed">{cert.name}</span>
                     </a>
                   ))}
                 </div>

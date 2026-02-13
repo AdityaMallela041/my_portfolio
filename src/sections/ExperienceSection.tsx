@@ -112,8 +112,8 @@ export function ExperienceSection() {
                         key={rIndex} 
                         className="flex items-start gap-3 text-slate-secondary text-sm"
                       >
-                        <span className="text-indigo mt-1.5 flex-shrink-0">•</span>
-                        <span>{resp}</span>
+                        <span className="text-indigo mt-0.5 flex-shrink-0">•</span>
+                        <span className="leading-relaxed">{resp}</span>
                       </li>
                     ))}
                   </ul>
